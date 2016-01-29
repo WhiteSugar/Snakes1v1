@@ -25,7 +25,7 @@ namespace Snake
         
         public void CreatDefaultParts() 
         {
-            // use thread's shit here later
+            
             Parts.Add(new SnakePart(19, 0));
             Parts.Add(new SnakePart(18, 0));
             Parts.Add(new SnakePart(17, 0));
@@ -38,9 +38,8 @@ namespace Snake
             Parts.Add(new SnakePart(10, 0));
         }
 
-        public void DrawSnake() // initiation in MainWindow
+        public void DrawSnake() 
         { 
-            // use thread's here latter
             Grid.SetColumn(Head.rect, Head.X);
             Grid.SetRow(Head.rect, Head.Y);
             foreach(SnakePart part in Parts)
